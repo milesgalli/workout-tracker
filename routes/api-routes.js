@@ -4,7 +4,7 @@ const db = require("../models");
 
 // Get to find the last workout
 
-router.get("./workouts", (req, res) => {
+router.get("/workouts", (req, res) => {
   db.workout.find({}, (err, lastWorkoutData) => {
     if (err) {
       console.log(err);
@@ -14,6 +14,14 @@ router.get("./workouts", (req, res) => {
   });
 });
 
+
+
+
+// const res = await fetch("/api/workouts", {
+//   method: "POST",
+//   body: JSON.stringify(data),
+//   headers: { "Content-Type": "application/json" }
+// });
 //Put / update - add excersise to last workout
 
 router.put("/workouts/:id", (req, res) => {
@@ -29,7 +37,7 @@ router.put("/workouts/:id", (req, res) => {
 
 // Post to create a new workout
 
-router.post("/workouts/range", (req, res) => {
+router.post("/workouts", (req, res) => {
   db.workout
     .create(req.body)
     .then((newWorkout) => {
