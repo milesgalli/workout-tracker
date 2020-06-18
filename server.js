@@ -18,6 +18,10 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
   useFindAndModify: true,
   useNewUrlParser: true });
 
+const MONGOD_URI = process.env.MONGODB_URI || "mongodb: //localhost/mongoHeadlines"; 
+
+mongoose.connect(MONGOD_URI)
+
 // turn on routes
 app.use(routes);
 

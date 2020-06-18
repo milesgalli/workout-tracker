@@ -7,4 +7,3 @@ The web application allows users to store there daily workouts. The application 
 
 App is deployed on heroku which can be found below: 
 
-# Final Thoughts 
