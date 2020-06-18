@@ -7,3 +7,5 @@ The web application allows users to store there daily workouts. The application 
 
 App is deployed on heroku which can be found below: 
 
+https://frozen-shelf-22066.herokuapp.com/?id=5eeb3ec5398d1400174c12c0
+
